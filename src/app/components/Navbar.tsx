@@ -37,7 +37,7 @@ export function Navbar() {
             </div>
             <div>
               <h1 className="text-2xl font-bold gradient-text">XOLabs</h1>
-              <p className="text-xs text-gray-400">{language === "fa" ? "دایره‌المعارف کریپتو" : "Crypto Encyclopedia"}</p>
+              <p className="text-xs text-gray-400">{language === "fa" ? "" : "Crypto Encyclopedia"}</p>
             </div>
           </Link>
 

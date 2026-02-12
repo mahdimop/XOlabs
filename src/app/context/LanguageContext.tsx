@@ -14,19 +14,19 @@ const translations = {
   fa: {
     // Navbar
     home: "خانه",
-    dashboard: "داشبورد زنده",
-    academy: "آکادمی XO",
+    dashboard: "داشبورد ",
+    academy: "آکادمی ",
     tools: "ابزارخانه",
     security: "مرکز امنیت",
     iranianHub: "هاب ایرانیان",
-    future: "آینده‌نگاری",
+    future: "آینده‌نگری",
     library: "کتابخانه",
     community: "انجمن",
     marketplace: "بازار ابزارها",
     support: "پشتیبانی",
     
     // Home
-    heroTitle: "دایره‌المعارف هوشمند کریپتو و فارکس",
+    heroTitle: "  کریپتو و فارکس",
     heroSubtitle: "کامل‌ترین مرجع فارسی برای تریدرهای ایرانی",
     heroDescription: "از صفر تا صد تحلیل تکنیکال و فاندامنتال، ابزارهای حرفه‌ای، آموزش‌های جامع و پشتیبانی 24/7",
     exploreDashboard: "مشاهده داشبورد زنده",
@@ -62,7 +62,7 @@ const translations = {
     economicCalendar: "تقویم اقتصادی",
     
     // Academy
-    academyTitle: "آکادمی XO - آموزش حرفه‌ای",
+    academyTitle: "آکادمیآموزش حرفه‌ای",
     academySubtitle: "مسیر یادگیری شما از صفر تا صد",
     level: "سطح",
     lessons: "درس",
@@ -95,7 +95,7 @@ const translations = {
     taxAndLaws: "مالیات و قوانین",
     
     // Future Insights
-    futureTitle: "آینده‌نگاری بازار",
+    futureTitle: "آینده‌نگری بازار",
     futureSubtitle: "نگاهی به تکنولوژی‌های نوظهور و آینده بازارها",
     emergingTech: "تکنولوژی‌های نوظهور",
     marketAnalysis: "تحلیل آینده بازارها",
@@ -137,7 +137,7 @@ const translations = {
     
     // Footer
     aboutXO: "درباره XOLabs",
-    aboutText: "XOLabs کامل‌ترین دایره‌المعارف فارسی کریپتو و فارکس است که توسط گروه mop - the mop community طراحی و توسعه یافته است.",
+    aboutText: "توسعه و فناوری تیم XO labs",
     quickLinks: "لینک‌های سریع",
     resources: "منابع",
     legal: "قوانین",
@@ -148,7 +148,7 @@ const translations = {
     telegram: "تلگرام",
     allRights: "تمام حقوق محفوظ است",
     madeBy: "ساخته شده توسط",
-    mopCommunity: "گروه mop - the mop community",
+    mopCommunity: "ٓXO labs",
   },
   en: {
     // Navbar
@@ -276,7 +276,7 @@ const translations = {
     
     // Footer
     aboutXO: "About XOLabs",
-    aboutText: "XOLabs is the most complete Persian crypto and forex encyclopedia designed and developed by mop group - the mop community.",
+    aboutText: "XO labs",
     quickLinks: "Quick Links",
     resources: "Resources",
     legal: "Legal",
@@ -287,7 +287,7 @@ const translations = {
     telegram: "Telegram",
     allRights: "All Rights Reserved",
     madeBy: "Made by",
-    mopCommunity: "mop group - the mop community",
+    mopCommunity: "XO labs",
   },
 };
 

@@ -45,10 +45,10 @@ export default function Home() {
   ];
 
   const stats = [
-    { value: "1000+", label: t("lessons"), icon: BookOpen },
+    { value: "100+", label: t("lessons"), icon: BookOpen },
     { value: "50+", label: t("tools"), icon: Zap },
-    { value: "200+", label: t("articles"), icon: Star },
-    { value: "10,000+", label: t("users"), icon: Users },
+    { value: "20+", label: t("articles"), icon: Star },
+    { value: "1000+", label: t("users"), icon: Users },
   ];
 
   return (

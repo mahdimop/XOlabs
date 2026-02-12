@@ -345,12 +345,12 @@ export default function Support() {
               <Mail className="w-10 h-10 text-[#8A2BE2] group-hover:scale-110 transition-transform" />
               <div>
                 <p className="text-sm text-gray-400">ایمیل</p>
-                <p className="text-white font-bold">info@xolabs.io</p>
+                <p className="text-white font-bold">wandermanki@gmail.com</p>
               </div>
             </a>
 
             <a
-              href="https://t.me/xolabs_support"
+              href="https://t.me/xolabscom"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-4 p-6 bg-[#00D4FF]/10 rounded-xl hover:bg-[#00D4FF]/20 transition-all duration-300 group"
@@ -358,7 +358,7 @@ export default function Support() {
               <Send className="w-10 h-10 text-[#00D4FF] group-hover:scale-110 transition-transform" />
               <div>
                 <p className="text-sm text-gray-400">تلگرام</p>
-                <p className="text-white font-bold">@xolabs_support</p>
+                <p className="text-white font-bold">xo labs</p>
               </div>
             </a>
           </div>
