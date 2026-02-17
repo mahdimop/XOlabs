@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router";
 import { useLanguage } from "../context/LanguageContext";
-import { Menu, X, Globe, TrendingUp } from "lucide-react";
+import { Menu, X, Globe, TrendingUp, Heart } from "lucide-react";
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 
@@ -58,8 +58,20 @@ export function Navbar() {
             ))}
           </div>
 
-          {/* Language Toggle & Mobile Menu */}
-          <div className="flex items-center gap-4">
+          {/* Right Side Buttons */}
+          <div className="flex items-center gap-3">
+            {/* Support Button */}
+            <a
+              href="https://daramet.com/xolabs"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden md:flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-[#8A2BE2] to-[#00D4FF] text-white hover:shadow-lg hover:shadow-[#8A2BE2]/50 transition-all duration-300 group"
+            >
+              <Heart className="w-4 h-4 group-hover:scale-110 transition-transform duration-300" />
+              <span className="text-sm font-bold">حمایت</span>
+            </a>
+
+            {/* Language Toggle */}
             <button
               onClick={toggleLanguage}
               className="flex items-center gap-2 px-4 py-2 rounded-lg bg-[#1a1a25] text-white hover:bg-[#8A2BE2] transition-all duration-300 hover:glow-purple"
@@ -88,21 +100,35 @@ export function Navbar() {
             exit={{ opacity: 0, height: 0 }}
             className="xl:hidden border-t border-[#8A2BE2]/30 glass"
           >
-            <div className="container mx-auto px-4 py-4 grid grid-cols-2 gap-2">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.path}
-                  to={link.path}
-                  onClick={() => setMobileMenuOpen(false)}
-                  className={`px-4 py-3 rounded-lg text-sm font-medium transition-all duration-300 text-center ${
-                    isActive(link.path)
-                      ? "bg-[#8A2BE2] text-white glow-purple"
-                      : "text-gray-300 hover:text-white hover:bg-[#1a1a25]"
-                  }`}
-                >
-                  {link.label}
-                </Link>
-              ))}
+            <div className="container mx-auto px-4 py-4">
+              {/* Mobile Support Button */}
+              <a
+                href="https://daramet.com/xolabs"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 w-full mb-4 px-4 py-3 rounded-lg bg-gradient-to-r from-[#8A2BE2] to-[#00D4FF] text-white font-bold hover:shadow-lg hover:shadow-[#8A2BE2]/50 transition-all duration-300 group"
+              >
+                <Heart className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
+                <span>حمایت از XOLabs</span>
+              </a>
+              
+              {/* Mobile Navigation Links */}
+              <div className="grid grid-cols-2 gap-2">
+                {navLinks.map((link) => (
+                  <Link
+                    key={link.path}
+                    to={link.path}
+                    onClick={() => setMobileMenuOpen(false)}
+                    className={`px-4 py-3 rounded-lg text-sm font-medium transition-all duration-300 text-center ${
+                      isActive(link.path)
+                        ? "bg-[#8A2BE2] text-white glow-purple"
+                        : "text-gray-300 hover:text-white hover:bg-[#1a1a25]"
+                    }`}
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
             </div>
           </motion.div>
         )}

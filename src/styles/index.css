@@ -1,3 +1,53 @@
-@import './fonts.css';
-@import './tailwind.css';
-@import './theme.css';
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --neon-purple: #8a2be2;
+    --neon-blue: #00d4ff;
+    --dark-bg: #0a0a0f;
+    --dark-card: #12121a;
+  }
+
+  body {
+    background-color: var(--dark-bg);
+    color: white;
+    font-family: 'Vazirmatn', 'Inter', sans-serif;
+  }
+}
+
+@layer components {
+  .glass {
+    background: rgba(18, 18, 26, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(138, 43, 226, 0.3);
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, var(--neon-purple), var(--neon-blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .glow-purple {
+    box-shadow: 0 0 20px rgba(138, 43, 226, 0.5);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--dark-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--neon-purple);
+  border-radius: 5px;
+}
